@@ -1,8 +1,8 @@
-app = "fly-ahmed-elhanony"
+app = "ahmedelhanony"
 
 [env]
 APP_ENV = "production"
-APP_URL = "https://fly-ahmed-elhanony.fly.dev"
+APP_URL = "https://ahmedelhanony.fly.dev"
 LOG_CHANNEL = "stderr"
 LOG_LEVEL = "info"
 
