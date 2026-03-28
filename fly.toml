@@ -1,8 +1,8 @@
-app = "fly-hello-laravel"
+app = "fly-ahmed-elhanony"
 
 [env]
 APP_ENV = "production"
-APP_URL = "https://fly-hello-laravel.fly.dev"
+APP_URL = "https://fly-ahmed-elhanony.fly.dev"
 LOG_CHANNEL = "stderr"
 LOG_LEVEL = "info"
 
