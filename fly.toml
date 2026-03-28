@@ -1,13 +1,13 @@
 app = "ahmedelhanony"
 
 [[services]]
-  internal_port = 5678
-  protocol = "tcp"
+internal_port = 5678
+protocol = "tcp"
 
-  [[services.ports]]
-    handlers = ["http"]
-    port = 80
+[[services.ports]]
+handlers = ["http"]
+port = 80
 
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
+[[services.ports]]
+handlers = ["tls", "http"]
+port = 443
