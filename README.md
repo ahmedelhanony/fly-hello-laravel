@@ -4,7 +4,7 @@ A minimal Laravel application for Fly.io.
 
 ## Run it locally
 
-You will need PHP 8+. You can check the version using `php --version`. And [composer](https://getcomposer.org/).
+You will need PHP 8+. You can check the version using `php --version`. And [composer](https://getcomposer.org/). test
 
 1. Clone this repo
 2. Duplicate `.env.example` naming it `.env`
