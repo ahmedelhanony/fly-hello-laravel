@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.18
 
 LABEL fly_launch_runtime="laravel"
 
