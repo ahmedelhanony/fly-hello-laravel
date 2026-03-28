@@ -1,38 +1,13 @@
 app = "ahmedelhanony"
 
-[env]
-APP_ENV = "production"
-APP_URL = "https://ahmedelhanony.fly.dev"
-LOG_CHANNEL = "stderr"
-LOG_LEVEL = "info"
-
 [[services]]
-internal_port = 8080
-protocol = "tcp"
+  internal_port = 5678
+  protocol = "tcp"
 
-[services.concurrency]
-hard_limit = 50
-soft_limit = 25
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
 
-[[services.http_checks]]
-grace_period = "2s"
-interval = 5000
-method = "get"
-path = "/"
-protocol = "http"
-restart_limit = 5
-timeout = 2000
-tls_skip_verify = true
-
-[[services.ports]]
-handlers = ["tls", "http"]
-port = 443
-
-[[services.ports]]
-handlers = ["http"]
-port = 80
-
-[[services.tcp_checks]]
-grace_period = "2s"
-interval = 5000
-timeout = 2000
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
